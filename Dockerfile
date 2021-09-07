@@ -6,6 +6,6 @@ RUN yarn install
 RUN yarn build
 FROM socialengine/nginx-spa:latest
 
-COPY build /app
+COPY ./build /app
 RUN chmod -R 777 /app
 EXPOSE 80
